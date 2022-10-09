@@ -97,6 +97,14 @@ class MobbexCheckout
                         'failure' => false,
                     ],
                 ],
+                'split' => [
+                    [
+                        'tax_id' => '20273658077',
+                        'total' => $this->total,
+                        'reference' => $this->reference,
+                        'fee' => 20,
+                    ],
+                ],
             ], $this->relation)
         ];
         return $this->api->request($data);
