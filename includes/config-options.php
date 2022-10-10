@@ -311,4 +311,20 @@ return [
         'default' => 'no',
     ],
 
+    'tax_id' => [
+        'title'       => __('TAX ID', 'mobbex-for-woocommerce'),
+        'description' => __('Identificación tributaria de la Empresa a la cual va dirigido el pago. En Argentina colocar el CUIT sin guiones ni puntos.', 'mobbex-for-woocommerce'),
+        'type'        => 'text',
+        'default'     => '',
+        'class'       => 'mbbx-into-advanced',
+    ],
+
+    'fee' => [
+        'title'       => __('FEE', 'mobbex-for-woocommerce'),
+        'description' => __('Porcentaje del total de comisión que cobrará el creador del pago. El receptor de la comisión será la Empresa que genera la operación.', 'mobbex-for-woocommerce'),
+        'type'        => 'text',
+        'default'     => '',
+        'class'       => 'mbbx-into-advanced',
+    ],
+
 ];

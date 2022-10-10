@@ -99,10 +99,10 @@ class MobbexCheckout
                 ],
                 'split' => [
                     [
-                        'tax_id' => '20273658077',
+                        'tax_id' => $this->settings['tax_id'],
                         'total' => $this->total,
                         'reference' => $this->reference,
-                        'fee' => 20,
+                        'fee' => (float) (floor(($this->total / 1.00) * ($this->settings['fee'])) / 100),
                     ],
                 ],
             ], $this->relation)
